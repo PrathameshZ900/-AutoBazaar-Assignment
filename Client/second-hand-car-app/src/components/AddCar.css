@@ -1,0 +1,96 @@
+/* Add Car Page */
+.add-car-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  background-color: #f5f5f5;
+}
+
+/* Add Car Form */
+.add-car-form {
+  margin-top: 20px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 30px 40px;
+  width: 450px;
+  max-width: 90%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.add-car-form h2 {
+  font-size: 1.8rem;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Input Fields */
+.add-car-form input,
+.add-car-form select,
+.add-car-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
+  font-size: 16px;
+  color: #555555;
+  transition: all 0.3s ease;
+}
+
+.add-car-form input:focus,
+.add-car-form select:focus,
+.add-car-form textarea:focus {
+  border-color: #0066cc;
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.2);
+  outline: none;
+}
+
+/* Submit Button */
+.add-car-form button {
+  background-color: #0066cc;
+  color: white;
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-car-form button:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+/* Label and Placeholder Text */
+.add-car-form input::placeholder,
+.add-car-form textarea::placeholder {
+  color: #aaaaaa;
+  font-style: italic;
+}
+
+.add-car-form input:focus::placeholder,
+.add-car-form textarea:focus::placeholder {
+  color: transparent;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .add-car-form {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .add-car-form h2 {
+    font-size: 1.5rem;
+  }
+}
